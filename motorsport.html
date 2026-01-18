@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW</title>
+  <link rel="stylesheet" href="Estilos/estiloPW.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+<img id="logo1" src="https://www.bmw.com.mx/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg" alt="Logo">
+  <nav>
+    <ul>
+      <li><a href="index.html" class="cosas">Inicio</a></li>
+      <li><a href="autos.html" class="cosas">Autos</a></li>
+      <li><a href="motos.html" class="cosas">Motocicletas</a></li>
+      <li><a href="motorsport.html" class="cosas">BMW M Motorsport</a></li>
+      <li><a href="historia.html" class="cosas">Historia</a></li>
+      <li><a href="contacto.html" class="cosas">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+  <!--Portada y secciones de categorías -->
+  <main>
+    <!-- Portada principal -->
+    <section>
+      <figure>
+        <!-- Imagen de la portada (usar una imagen rectangular y con buena calidad) -->
+        <img class="img-portada" src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/2025/home/bmw-m-motorsport-we-are-one-team-12h-bathurst-mg-03-16x9.jpg?imwidth=1440" alt="Portada">
+      </figure>
+    </section>
+
+    <section id="motorS">
+      
+      <div id="textM">
+        BMW M Motorsport representa el máximo nivel de rendimiento y deportividad de la marca. Nacida de la experiencia de BMW en las competencias automovilísticas, esta división se enfoca en el desarrollo de vehículos y tecnologías orientadas a la pista, sin perder la esencia de la conducción diaria.<br><br>
+
+        Desde su creación, BMW M ha estado presente en las principales categorías del automovilismo mundial, logrando numerosos títulos y victorias. Sus modelos se caracterizan por motores de alto rendimiento, chasis optimizados, aerodinámica avanzada y un diseño agresivo que refleja su ADN deportivo.<br><br>
+
+        BMW M Motorsport es sinónimo de precisión, potencia y pasión por las carreras, llevando la innovación del circuito a la carretera.
+      </div>
+
+      <div id="fotoM1">
+       <img id="fotoM" src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/2025/home/bmw-m-motorsport-we-are-one-team-12h-bathurst-mg-01-16x9.jpg?imwidth=1440">
+      </div>
+    </section>
+
+<div class="trofee">
+    <img class="trofeo" src="win.png" alt="Trofeo">
+    <div class="confeti"></div>
+</div>
+
+    <footer>
+<strong>Luis Alvarez de Ochoa 2026</strong>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<!-- Código -->
+<script>
+const trofeo = document.querySelector(".trofeo");
+
+if (trofeo) {
+  trofeo.addEventListener("click", () => {
+    confetti({
+      particleCount: 120,
+      spread: 80,
+      colors: ['#00AEEF', '#003366', '#E10600'],
+      origin: { y: 0.6 }
+    });
+  });
+}
+</script>
+
+</body>
+</html>

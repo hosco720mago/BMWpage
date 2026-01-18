@@ -1,0 +1,305 @@
+
+:root {
+  --bg: #333;          /* fondo general */
+  --text: #ffffff;        /* color de texto principal */
+  --primary: #ffffff;     /* color principal para enlaces */
+  --light: #ffffff;       /* color claro */
+  --accent: #ff5e3a;      /* color de ofertas */
+  --radius: 14px;         /* radio de esquinas */
+  --shadow: 0 4px 16px rgba(0, 102, 177, 1) ; /* sombra suave */
+  --font: 'Inter', sans-serif; /* tipografía principal */
+}
+/* reseteo en el navegador */
+* { 
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+}
+html, body { 
+  height: 100%; 
+}
+
+body{
+	font-family: var(--font);
+	background: var(--bg);
+	color: var(--text);
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+}
+.cosas{
+	transition: color 0.3s ease;
+}
+
+
+.cosas:hover{
+	color: rgb(0, 102, 177);
+}
+
+header { 
+background:var(--Light);
+padding:0.7rem 1.5rem;
+box-shadow: var(--shadow);
+display: flex;
+justify-content: space-between;
+align-items: center;
+ }
+
+#logo1 {
+	width: 60px;
+	margin: 0;
+}
+
+nav ul{
+	display: flex;
+	gap: 24px;
+	list-style: none;
+}
+
+nav a{
+	text-decoration: none;
+	color: var(--primary);
+	font-weight: 600;
+}
+
+.img-portada{
+	width: 97%;
+	max-height: 530px;
+	object-fit: cover;
+	display: block;
+	margin: 50px auto;
+	border-radius: 20px;
+}
+
+
+
+/*FORM*/
+footer{
+		background: rgb(0, 102, 177);
+	color: white;
+	padding: 20px;
+	margin-top: 32px;
+	text-align: center;
+	font-size: 16px;
+}
+form label {
+	display: block;
+	margin-top: 12px;
+	font-weight: 600;
+}
+
+form input, form textarea {
+	margin-top 8px;
+	padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  widht: 100%;
+}
+
+form textarea{
+	resize: vertical;
+	min-height: 100px;
+}
+
+form button{
+	margin-top: 14px;
+	padding: 12px;
+	border-radius: 10px;
+	border: none;
+	background: var(--primary);
+	color: black;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.mainContacto{
+	background-image: url("https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/topics/magazine-article-pool/2024/wallpaper/m-wallpaper/3-0-csl/bmw-3-0-csl-mi-05.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.contacto{
+	padding: 24px;
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	width: 100%;
+	max-width: 480px;
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(8px);
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 200px;
+}
+
+.contenedorP{
+	max-width: 1200px;
+	margin:24px auto;
+	padding: 0 8px;
+	display: grid;
+	grid-template-columns:repeat(auto-fit,minmax(240px, 1fr)) ;
+	gap: 24px;
+}
+
+.categoriaP:hover{
+transform:translateY(-6px);
+}
+
+.categoriaP{
+	transition: transform 0.2s ease;
+}
+
+.img-car{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	border-radius: var(--radius);
+}
+
+.contenedorMoto{
+	font-weight: 600;
+	text-align: center ;
+	color: whitesmoke;
+	width: 100%;
+	max-width: 1100px;
+	margin:32px auto;
+	padding: 0 8px;
+	display: grid;
+	grid-template-columns:repeat(auto-fit,minmax(240px, 1fr)) ;
+	gap: 35px;
+	margin-bottom: 70px;
+
+}
+
+.catalogo:hover{
+transform: scale(1.06);
+}
+
+.catalogo{
+	background: rgb(0, 102, 177);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+	transition: transform 0.2s ease;
+}
+
+.fotoA{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	border-radius: var(--radius);
+}
+
+.historiaP{
+	display: flex;
+	padding: 24px;
+	border-radius: var(--radius);
+	background: rgb(0, 102, 177);
+	width: 60%;
+	margin: 80px auto;
+}
+
+#textoh{
+	padding-top: 10px;
+	padding-right: 10px;
+	flex: 2;
+}
+
+#vixi{
+	margin-right: auto;
+	flex: 0.1;
+}
+
+#vixie{
+	border-radius: var(--radius);
+}
+
+#info{
+	border-radius: var(--radius);
+	display: flex;
+	width: 60%;
+	margin: 80px auto;
+	margin-bottom: 100px;
+}
+
+
+.contenedorAuto {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    margin-top: 30px;
+}
+
+.catalogoA {
+    background: rgb(0, 102, 177);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    height: 200px;
+}
+
+.fotoAu {
+    width: 370px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.textoa {
+    padding: 30px;
+    flex: 2;
+}
+
+
+
+#motorS{
+	display: flex;
+	padding: 24px;
+	border-radius: var(--radius);
+	background-color: rgb(0, 102, 177);
+	width: 80%;
+	margin: 80px auto;
+}
+
+#textM{
+flex: 1;
+padding-right: 30px;
+}
+
+#fotoM1{
+width:60% ;
+height: 60%;
+overflow: hidden;
+
+}
+
+#fotoM{
+width: 100%;
+height: 100%;
+border-radius: var(--radius);
+}
+
+.trofeo {
+	margin-top: 30px ;
+width: 700px;
+margin-left: 75px;
+scale: 152%;
+cursor:pointer;
+}
+
+.trofee{
+
+	display: flex;
+	padding: 24px;
+	border-radius: var(--radius);
+	width: 60%;
+	margin: 80px auto;
+}
